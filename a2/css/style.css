@@ -1,1 +1,71 @@
-/* Insert your styles here */
+/* Global Style */
+.wrap
+{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.right
+{
+    float: right;
+    margin-top: 5px;
+}
+
+h1
+{
+    font-family: 'Barrio', cursive;
+}
+
+.accent
+{
+    color: red;
+    font-family: 'Barrio', cursive;
+}
+
+/** Global Nav **/
+
+.nav
+{
+    background-color: #333;
+    overflow: auto;
+    top: 0;
+    padding: 20px 0px;
+}
+
+.nav .accent
+{
+    display: inline;
+}
+
+.nav ul
+{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.nav li
+{
+    float: left;
+}
+
+.nav li a
+{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav li a:hover
+{
+    color: green;
+}
+
+.nav .title
+{
+    font-family: 'Barrio', cursive;
+    font-size: 20px;
+}

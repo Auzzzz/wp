@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Assignment 2</title>
-    
+
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
@@ -17,7 +17,27 @@
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+      <header class="nav">
+          <ul>
+              <li>
+                  <a class="title" href="index.html"><p class="accent">4Dog</p>Hosting</a>
+              </li>
+          </ul>
+          <ul class="right">
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="news.html">News</a>
+              </li>
+              <li>
+                  <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                  <a href="aboutus.html">About</a>
+              </li>
+          </ul>
+      </header><!-- End Navbar-->
     </nav>
 
     <main>
