@@ -13,31 +13,27 @@
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+      <img class="center" src="../img/logo.png">
     </header>
 
     <nav>
-      <header class="nav">
-          <ul>
-              <li>
-                  <a class="title" href="index.html"><p class="accent">4Dog</p>Hosting</a>
-              </li>
-          </ul>
-          <ul class="right">
-              <li>
-                  <a href="index.html">Home</a>
-              </li>
-              <li>
-                  <a href="news.html">News</a>
-              </li>
-              <li>
-                  <a href="contact.html">Contact</a>
-              </li>
-              <li>
-                  <a href="aboutus.html">About</a>
-              </li>
-          </ul>
-      </header><!-- End Navbar-->
+      <ul>
+        <li>
+           <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Test </a>
+        </li>
+        <li>
+          <a href="#"> Test</a>
+        </li>
+        <li>
+          <a href="#">Test</a>
+        </li>
+        <li>
+          <a href="#">Test</a>
+        </li>
+      </ul>
     </nav>
 
     <main>
