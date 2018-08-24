@@ -3,11 +3,12 @@ body {
   margin: 0 auto;
 }
 
-header .center {
+header .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width:auto;
+  height: auto;
 }
 
 nav {
@@ -17,8 +18,8 @@ nav {
 }
 
 nav ul {
-  display: inline-block;
-   list-style-type: none;
+  width: 70%; /* Used to help center the nav*/
+  margin: auto;
   list-style: none;
   overflow: hidden;
 }
@@ -30,7 +31,7 @@ nav ul li {
 
 @media only screen and (max-width: 600px) {
   nav ul li {
-
+    /* Makes the nav go into vertival style */
   }
 }
 
