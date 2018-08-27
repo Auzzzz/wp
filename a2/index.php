@@ -9,7 +9,8 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Merienda|Open+Sans" rel="stylesheet">
+
 
     <!-- JS -->
     <script src='../wireframe.js'></script>
@@ -19,7 +20,6 @@
 
     <header>
       <div class="logo"></div>
-      <div class ="smlogo"></div>
     </header>
 
     <nav id="home">
@@ -32,19 +32,42 @@
     </nav>
 
     <main id="home">
+      <section>
+        <div class="desc">
+          <p>When it comes to web hosting in Australia we know that you have numerous choices. An none of them stack up to us! Even when they say some Australian based web hosting choices are better than us. If you want outstanding performance with your website hosting or any hosting and the kind of support that makes our customers grin from ear to ear like the devil has awoken inside them to destroy their computer, you want Eclipse Hosting. We boast a range of affordable, all Aussie hosting options for personal, business and professional hosting use. Whatever you’re after — whether it’s economy hosting, your evil empire or highly questionable websites that other hosting companies shy away from. we can help you. Choose the Australian web hosting company that cares for its customers.  </p>
+        </div>
+      </section>
+
       <section class="info-grid">
         <div class="box-grid">
           <div class="grid-display">
-            <h1> Why us? </h1>
-            <h3> Fortune Hosting is the best all round server hosting provider within Australia. With 15 years’ experience the hosting world along with over 500 happy customers you know you’re in good hands. Along with our top of the range Pentium © servers we can host anything and everything that you require from a simple email server to a mega file system </h3>
+            <h1 id="green"> 99.9% Uptime </h1>
+            <p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
           </div>
           <div class="grid-display">
-            <h3> test </h3>
+            <h1 id="blue"> Perfect firewalls </h1>
+            <p>Nothing can get through! NOTHING!  </p>
           </div>
           <div class="grid-display">
-            <h3> test </h3>
+            <h1 id="red"> 24/7 Assistants </h1>
+            <p> Our Assistants can assist you in your vulnerable time of need*</p>
+          </div>
+          <div class="grid-display">
+            <h1 id="green"> Aussie Servers </h1>
+            <p>We are 100% Aussie nothing more nothing less….* </p>
+            </div>
+          <div class="grid-display">
+            <h1 id="blue"> Money Back </h1>
+              <p>Don’t like us? 39-day money back guarantee* </p>
+          </div>
+          <div class="grid-display">
+            <h1 id="red"> Instant start   </h1>
+            <p> As soon as we have your money you get the goods……*</p>
           </div>
         </div>
+      </section>
+
+
     </main>
 
     <footer>

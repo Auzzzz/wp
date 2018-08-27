@@ -1,10 +1,51 @@
 /* Global */
 
+/* constent colors
+#2099EA /* Sky blue
+#616163 /* black
+#20BF55 /* green
+#EF6461 /* red   */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*header */
+
+@media only screen and (max-width: 13000px) {
+  .logo {
+    background: url("http://rmit.chris-mkelly.com/Lglogo.png");
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 200px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    background: url("http://rmit.chris-mkelly.com/mlogo.png");
+    background-repeat: no-repeat;
+    width: 450px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    background: url("http://rmit.chris-mkelly.com/SmallLogo.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* nav */
 
 nav {
   color: #fff;
@@ -36,27 +77,43 @@ nav {
 
 /* #home */
 
-main .info-grid .grid-display h1{
-  font-family: Merienda, serif;
+#home .grid-display h1 {
+  font-family: 'Merienda', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+#home .grid-display p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+#home #green {
+  color:
 }
 
 /* Home Page */
 
+main {
+  margin-top: 30px;
+}
+
 main .info-grid {
   display: flex;
   justify-content: center;
+  width:
 }
 
-main .box-grid {
-  width: 900px;
+main .info-grid .box-grid {
+  width: 1000px;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-main .grid-display {
-  border: 1px solid #fff;
-  width: 300px;
-  height: 300px;
+main .info-grid .grid-display {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: calc(300px - (1 - 1/3)*40px); /* creates the gap between elements and also the ablity to sub down*/
+  padding: 10px;
 }
