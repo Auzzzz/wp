@@ -13,7 +13,7 @@
   <body>
 
     <header>
-      <img class="center" src="../img/logo.png">
+      <div class="logo">
     </header>
 
     <nav>
