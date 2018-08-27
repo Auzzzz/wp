@@ -89,41 +89,43 @@ nav {
   justify-content: space-around;
 }
 
-.nav {
-  justify-content: right;
-  margin: auto;
-  width: 50%;
-  height: 50%;
+nav ul {
+  list-style: none;
   text-align: center;
 }
-
-.nav .menu li{
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
   display: block;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
 }
 
-div.nav:hover {
-    cursor: hand;
-    cursor: pointer;
-    opacity: .9;
+@media only screen and (max-width: 600px) {
+nav ul li a {
+padding: 20px;
+}
 }
 
-a.fill-div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    /* Makes sure the link doesn't get underlined */
-    z-index: 10;
-    /* raises anchor tag above everything else in div */
-    background-color: white;
-    /*workaround to make clickable in IE */
-    opacity: 0;
-    /*workaround to make clickable in IE */
-    filter: alpha(opacity=0);
-    /*workaround to make clickable in IE */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
 }
+nav ul li a:hover {
+  color: #555;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
 /* Home Page */
 
 main .header
@@ -213,4 +215,28 @@ main .info-grid .grid-display {
 
 main .info-grid .grid-display .icon{
   text-align: center;
+  padding: 10px;
+}
+
+main .info-grid .grid-display h1{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* footer */
+footer{
+  background-color: #616163;
+    bottom:0;
+  width:100%;
+}
+
+.footer{
+  padding: 20px;
+  margin: 20px 20px 0px 20px;
+  text-align: center;
+}
+
+footer .footer .dis{
+  font-size: 20px;
+  font-weight: bold;
 }
