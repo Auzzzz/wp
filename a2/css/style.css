@@ -1,86 +1,62 @@
-body {
-  max-width: 960px;
-  margin: 0 auto;
-}
+/* Global */
 
-header{
-  margin: 10px;
-}
-header .logo {
-  background: url("http://rmit.chris-mkelly.com/Lglogo.png");
-  background-repeat: no-repeat;
-    width: 750px;
-    height: 200px;
-  max-width: 750px;
-  display:block;
-  margin:auto;
-}
-
-@media only screen and (max-width: 700px) {
-  header .logo {
-    background: url("http://rmit.chris-mkelly.com/SmallLogo.png");
-    background-repeat: no-repeat;
-    margin-left: 100px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
-  margin-left: auto;
-  margin-right: auto;
-  margin: 20px 20px;
+  color: #fff;
+  background-color: #5995DA;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
-nav ul {
-  width: 70%; /* Used to help center the nav*/
-  margin: auto;
-  list-style: none;
-  overflow: hidden;
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
 }
 
-nav ul li {
-  float: left;
-  padding: 20px;
+.nav {
+  justify-content: right;
 }
 
-@media only screen and (max-width: 600px) {
-  nav ul li {
-    /* Makes the nav go into vertival style */
-  }
+.links {
+  border: 1px solid #fff;
+  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
 }
 
-nav ul li a {
-  text-align: center;
-  padding: 18px;
-  display: block;
-  width: 100%;
-  background: #FFF;
-  /* Old browsers */
-  background: -moz-linear-gradient: #FFF;
-  /* FF3.6+ */
-  background: -webkit-gradient: #FFF;
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient: #FFF;
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient: #FFF;
-  /* Opera 11.10+ */
-  background: linear-gradient: #FFF;
+/* Text Section */
+
+/* #home */
+
+main .info-grid .grid-display h1{
+  font-family: Merienda, serif;
 }
 
-nav ul li a, nav ul li a:focus, nav ul li a:visited, nav ul li a:hover, nav ul li a:active {
-  color: #000;
-  text-decoration: none;
+/* Home Page */
+
+main .info-grid {
+  display: flex;
+  justify-content: center;
 }
 
-nav ul li a:hover, nav ul li a:active {
-  background: #F4F4F4;
-  /* Old browsers */
-  background: -moz-linear-gradient: #F4F4F4;
-  /* FF3.6+ */
-  background: -webkit-gradient: #F4F4F4;
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient:#F4F4F4;
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient: #F4F4F4;
-  /* Opera 11.10+ */
-  background: linear-gradient: #F4F4F4;
+main .box-grid {
+  width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .grid-display {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
 }
