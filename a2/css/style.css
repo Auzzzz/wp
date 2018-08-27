@@ -12,6 +12,33 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Merienda', sans-serif;
+  font-size: 30px;
+}
+
+#green {
+  color: #20BF55;
+}
+#blue {
+  color: #2099EA;
+}
+#red {
+  color: #EF6461;
+}
+#gray{
+  color: #616163;
+}
+#black{
+  color: #000;
+}
+
+
 /*header */
 
 @media only screen and (max-width: 13000px) {
@@ -19,7 +46,7 @@
     background: url("http://rmit.chris-mkelly.com/Lglogo.png");
     background-repeat: no-repeat;
     width: 750px;
-    height: 200px;
+    height: 150px;
     display: block;
     margin: auto;
   }
@@ -30,6 +57,7 @@
     background: url("http://rmit.chris-mkelly.com/mlogo.png");
     background-repeat: no-repeat;
     width: 450px;
+    height: 100px;
     display: block;
     margin: auto;
   }
@@ -49,14 +77,13 @@
 
 nav {
   color: #fff;
-  background-color: #5995DA;
+  background-color: #2099EA;
   padding: 20px 0;
   display: flex;
   justify-content: center;
 }
 
 .menu {
-  border: 1px solid #fff;
   width: 900px;
   display: flex;
   justify-content: space-around;
@@ -64,44 +91,110 @@ nav {
 
 .nav {
   justify-content: right;
-}
-
-.links {
-  border: 1px solid #fff;
-  /* For debugging */
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Text Section */
-
-/* #home */
-
-#home .grid-display h1 {
-  font-family: 'Merienda', sans-serif;
+  margin: auto;
+  width: 50%;
+  height: 50%;
   text-align: center;
-  font-size: 30px;
 }
 
-#home .grid-display p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+.nav .menu li{
+  display: block;
 }
 
-#home #green {
-  color:
+div.nav:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
 }
 
+a.fill-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
 /* Home Page */
 
-main {
-  margin-top: 30px;
+main .header
+{
+    background-image: url(http://rmit.chris-mkelly.com/bg-1.jpg);
+    width: 100%;
+    min-height: 250px;
+    background-size: cover;
+    position: relative;
+}
+
+main .header .wrap
+{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main .header .wrap h1
+{
+    padding: 15px 0px;
+}
+
+main .header .wrap p
+{
+    font-weight: bold;
+}
+
+main .desc{
+  margin: 0px 20px 20px 20px;
+  padding: 30px;
+}
+
+main .desc hr{
+  color: #616163;
+  background-color:#616163;
+  margin: 5px;
+  height: 1px;
+  border: 0;
+}
+
+main #options{
+  background-color: #616163;
+}
+main .options{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+main .options .box-grid {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main .options .grid-display {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: calc(300px - (1 - 1/3)*40px); /* creates the gap between elements and also the ablity to sub down*/
+  padding: 10px;
 }
 
 main .info-grid {
   display: flex;
   justify-content: center;
-  width:
 }
 
 main .info-grid .box-grid {
@@ -116,4 +209,8 @@ main .info-grid .grid-display {
   margin-bottom: 10px;
   width: calc(300px - (1 - 1/3)*40px); /* creates the gap between elements and also the ablity to sub down*/
   padding: 10px;
+}
+
+main .info-grid .grid-display .icon{
+  text-align: center;
 }
