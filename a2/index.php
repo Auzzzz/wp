@@ -27,24 +27,23 @@
 	</header>
 	<nav class="circle">
 		<ul>
-      <li><a href="index.php">Home</a></li>
+      <li><a id="active" href="index.php">Home</a></li>
 			<li><a href="products.php">Products</a></li>
 			<li><a href="#">Web Hosting</a></li>
 			<li><a href="#">Login</a></li>
 		</ul>
 	</nav>
 
-	<main id="home">
+	<main>
+    <section class="home">
 		<section class="header">
 			<div class="wrap">
-				<h1><b class="accent">4DOG</b>Servers</h1>
-				<p><b class="accent">4DOG</b> Servers We pride our selves on amazingly Poor Quality Servers</p>
+				<h1>Eclipse Servers</h1>
+				<p>>Eclipse Servers We pride our selves on amazingly Poor Quality Servers</p>
 			</div>
-			<!-- End Wrap -->
 		</section>
-		<!-- End Header -->
 
-		<section>
+		<section id="desc">
 			<div class="desc">
 				<h1> The Best Aussie Hosting </h1>
 				<hr />
@@ -106,7 +105,7 @@
 					<p> As soon as we have your money you get the goods……*</p>
 				</div>
 			</div>
-		</section>
+    </section>
 
 		<section>
 			<div class="cust">
@@ -115,7 +114,7 @@
 
 			</div>
 		</section>
-
+</section>
 	</main>
 
 	<footer>

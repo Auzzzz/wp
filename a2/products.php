@@ -28,37 +28,58 @@
 	<nav class="circle">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="products.php">Products</a></li>
+			<li><a id="active" href="products.php">Products</a></li>
 			<li><a href="#">Web Hosting</a></li>
 			<li><a href="#">Login</a></li>
 		</ul>
 	</nav>
 
 	<main>
-     <tbody>
-         <tr>
-             <td>1</td>
-             <td>Honda</td>
-             <td>Accord</td>
-             <td>2009</td>
-         </tr>
+  <section class="products">
+    <section class="header">
+			<div class="wrap">
+				<h1>Eclipse Servers</h1>
+				<p>Eclipse Servers We pride our selves on amazingly Poor Quality Servers</p>
+			</div>
+		</section>
+  </section>
 
-         <tr>
-             <td>2</td>
-             <td>Toyota</td>
-             <td>Camry</td>
-             <td>2012</td>
-         </tr>
+  <section class="list">
+    <div class="list-web">
+        <div class="options">
+          <h1> Web Servers </h1>
+          <hr />
+          <h1 id="green"> Basic </h1>
+          <p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
+        </div>
+        <div class="options">
+          <h1 id="blue"> Semi </h1>
+          <p>Nothing can get through! NOTHING! </p>
+        </div>
+        <div class="options">
+          <h1 id="red"> 24/7 Pro </h1>
+          <p> Our Assistants can assist you in your vulnerable time of need*</p>
+        </div>
 
-         <tr>
-             <td>3</td>
-             <td>Hyundai</td>
-             <td>Elantra</td>
-             <td>2010</td>
-         </tr>
-     </tbody>
- </table>
+        <div class="list-game">
+            <div class="options">
+              <h1> Game Servers </h1>
+              <hr />
+              <h1 id="green"> Basic </h1>
+              <p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
+            </div>
+            <div class="options">
+              <h1 id="blue"> Semi </h1>
+              <p>Nothing can get through! NOTHING! </p>
+            </div>
+            <div class="options">
+              <h1 id="red"> 24/7 Pro </h1>
+              <p> Our Assistants can assist you in your vulnerable time of need*</p>
+            </div>
+      </div>
 
+
+  </section>
 	</main>
 
 	<footer>
