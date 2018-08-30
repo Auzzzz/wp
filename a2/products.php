@@ -26,11 +26,11 @@
 		<div class="logo">
 	</header>
 	<nav class="circle">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a id="active" href="products.php">Products</a></li>
-			<li><a href="#">Web Hosting</a></li>
-			<li><a href="#">Login</a></li>
+    <ul>
+      <li><a id="active" href="index.php">Home</a></li>
+			<li><a href="products.php">Products</a></li>
+			<li><a href="product.php">Web Hosting</a></li>
+			<li><a href="login.php">Login</a></li>
 		</ul>
 	</nav>
 
