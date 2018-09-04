@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -28,17 +27,34 @@
 	</header>
 	<nav class="circle">
 		<ul>
-      <li><a id="active" href="index.php">Home</a></li>
+      <li><a href="index.php">Home</a></li>
 			<li><a href="products.php">Products</a></li>
-			<li><a href="product.php">Web Hosting</a></li>
+			<li><a id="active" href="product.php">Web Hosting</a></li>
 			<li><a href="login.php">Login</a></li>
 		</ul>
 	</nav>
 
 	<main>
+		<section class="header">
+			<div class="wrap">
+				<h1>Eclipse Servers</h1>
+				<p>Web Hosting Order Form</p>
+			</div>
+		</section>
 
-    <form method='post' target='_blank' action='https://titan.csit.rmit.edu.au/~e54061/wp/processing.php'>
-    	<p>Name:<br>
+		<section class="order">
+			<div class="webhost">
+				<h1> Website Hosing </h1>
+				<p class="head">Shared Specs</p>
+				<ul>
+					<li> CPU: Intel &copy; Pentium &copy; G4560 - 2 core</li>
+					<li> RAM: 4gb </li>
+					<li> Hard Drive: 64gb Seagate drive</li>
+					<li> Shared with 20 other sites </li>
+				</dv>
+
+	  <form id='order' method='post' target='_blank' action='https://titan.csit.rmit.edu.au/~e54061/wp/processing.php'>
+    	<p>Order Form:<br>
         <p id='error'></p>
     		<input type="text" id='id' name="id" placeholder="test1" />
         <button type="button" onclick="add();">+</button>
@@ -47,6 +63,8 @@
         <input type="text" id='option' name="option" placeholder="option" />
     	<p><input type="submit" value="Submit" /></p>
     </form>
+
+	</section>
 
 
 
@@ -62,7 +80,7 @@
 			document.getElementById('qty').value = i;
 			document.getElementById("demo").innerHTML = i;
 		} else {
-			document.getElementById("error").innerHTML = "Can not order more then 6!";
+			document.getElementById("error").innerHTML = "you some kind of hog? You can not order more then 6!";
 		}
 	}
 

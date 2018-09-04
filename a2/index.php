@@ -39,7 +39,7 @@
 		<section class="header">
 			<div class="wrap">
 				<h1>Eclipse Servers</h1>
-				<p>>Eclipse Servers We pride our selves on amazingly Poor Quality Servers</p>
+				<p>Eclipse Servers We pride our selves on amazingly Poor Quality Servers</p>
 			</div>
 		</section>
 
@@ -58,16 +58,13 @@
 			<div class="options">
 				<div class="box-grid">
 					<div class="grid-display">
-						<h1 id="green"> 99.9% Uptime </h1>
-						<p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
+						<h1 id="green"> 1023 Happy Customers </h1>
 					</div>
 					<div class="grid-display">
-						<h1 id="blue"> Perfect firewalls </h1>
-						<p>Nothing can get through! NOTHING! </p>
+						<h1 id="blue"> 21/2500 <br />Tickets Solved </h1>
 					</div>
 					<div class="grid-display">
-						<h1 id="red"> 24/7 Assistants </h1>
-						<p> Our Assistants can assist you in your vulnerable time of need*</p>
+						<h1 id="red"> 300,000 Total Hosted Websites</h1>
 					</div>
 				</div>
 		</section>
@@ -106,14 +103,6 @@
 				</div>
 			</div>
     </section>
-
-		<section>
-			<div class="cust">
-				<div id="changeText"></div>
-				<div id="personName"></div>
-
-			</div>
-		</section>
 </section>
 	</main>
 

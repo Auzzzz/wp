@@ -80,7 +80,7 @@ h1 {
 
 nav {
   color: #fff;
-  background-color: #7C7C7F;
+  background-color: #424B54;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -162,12 +162,16 @@ nav ul li a#active {
 /* Home Page */
 
 main .home #desc {
-  background-color: #f4f4f4;
+  background-color: #DADAD9;
 }
 
 main .home .desc {
   margin: 0px 20px;
   padding: 30px;
+}
+
+main .home .desc h1{
+  text-align: center;
 }
 
 main .home .desc hr {
@@ -179,7 +183,8 @@ main .home .desc hr {
 }
 
 main .home #options {
-  background-color: #616163;
+  background-color: #424B54;
+  text-align: center;
 }
 
 main .home .options {
@@ -252,12 +257,55 @@ main .list #green{
   margin-top: 10px;
 }
 
+main .list ul{
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+main .list ul li{
+  padding: 10px;
+}
+
+main .list ul li:nth-child(odd){
+  background-color: #747474;
+}
+
+main .list ul li:last-child{
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/*product*/
+
+main .order{
+  margin-left: 50px;
+}
+
+
+
+
+
+main .login .head{
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* login page */
+main .login{
+  min-height: 100%;
+}
+main .login-form{
+  text-align: center;
+}
 /* global footer */
 
 footer {
-  background-color: #616163;
-  bottom: 0;
+  background-color: #424B54;
   width: 100%;
+  margin-top: 24%;
 }
 
 .footer {

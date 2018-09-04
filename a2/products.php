@@ -27,8 +27,8 @@
 	</header>
 	<nav class="circle">
     <ul>
-      <li><a id="active" href="index.php">Home</a></li>
-			<li><a href="products.php">Products</a></li>
+      <li><a href="index.php">Home</a></li>
+			<li><a id="active" href="products.php">Products</a></li>
 			<li><a href="product.php">Web Hosting</a></li>
 			<li><a href="login.php">Login</a></li>
 		</ul>
@@ -50,11 +50,19 @@
           <h1> Web Servers </h1>
           <hr />
           <h1 id="green"> Basic </h1>
-          <p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
+					<div class="list">
+					<ul>
+          <li> Get only the basics of your hosting needs</li>
+					<li> One domin </li>
+					<li> Shared IP Address</li>
+					<li> 24 hour Support</li>
+					<li>$80</li>
+				</ul>
+			</div>
         </div>
         <div class="options">
           <h1 id="blue"> Semi </h1>
-          <p>Nothing can get through! NOTHING! </p>
+          <p>Get one more email address and one more domain! </p>
         </div>
         <div class="options">
           <h1 id="red"> 24/7 Pro </h1>
