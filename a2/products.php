@@ -61,7 +61,7 @@
 		    <li>Open Development Platforms</li>
 		    <li>Possible liablity</li>
 		    <li>Free Bacon!</li>
-		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
 		  </ul>
 		  <ul class="plans">
 		    <li class="title"><h1>Basic</h1></li>
@@ -69,7 +69,7 @@
 		    <li>More ram then you will EVER need</li>
 		  	<li> Weight saving storage techniqs</li>
 				<li> you will become a god with your own URL </li>
-		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
 		  </ul>
 		  <ul class="plans">
 		    <li class="title"><h1>Amzing</h1></li>
@@ -77,7 +77,7 @@
 				<li> Bring your A game to your compedters </li>
 				<li> Unleash raw power for your webserr </li>
 				<li>Custom Servers avaliable </li>
-		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
 		  </ul>
 		</div>
 
