@@ -137,6 +137,7 @@ nav ul li a#active {
 }
 
 .header {
+  /*https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_14.jpg*/
   background-image: url(http://rmit.chris-mkelly.com/bg-1.jpg);
   width: 100%;
   min-height: 250px;
@@ -378,6 +379,13 @@ main .order .webhost .specs {}
 
 main .order .form {
   margin: 30px 10px;
+}
+
+main .order .form form button{
+  padding: 5px;
+}
+main .order .form form #qty{
+  max-width: 50px;
 }
 
 main .order .form h3 {

@@ -108,7 +108,7 @@
 				i++;
 				document.getElementById('qty').value = i;
 			} else {
-				document.getElementById("error").innerHTML = "you some kind of hog? You can not order more then 612345!";
+				document.getElementById("error").innerHTML = "you some kind of hog? You can not order more then 6!";
 			}
 		}
 
