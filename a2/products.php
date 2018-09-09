@@ -45,46 +45,41 @@
   </section>
 
   <section class="list">
-    <div class="list-web">
-        <div class="options">
-          <h1> Web Servers </h1>
-          <hr />
-          <h1 id="green"> Basic </h1>
-					<div class="list">
-					<ul>
-          <li> Get only the basics of your hosting needs</li>
-					<li> One domin </li>
-					<li> Shared IP Address</li>
-					<li> 24 hour Support</li>
-					<li>$80</li>
-				</ul>
-			</div>
-        </div>
-        <div class="options">
-          <h1 id="blue"> Semi </h1>
-          <p>Get one more email address and one more domain! </p>
-        </div>
-        <div class="options">
-          <h1 id="red"> 24/7 Pro </h1>
-          <p> Our Assistants can assist you in your vulnerable time of need*</p>
-        </div>
 
-        <div class="list-game">
-            <div class="options">
-              <h1> Game Servers </h1>
-              <hr />
-              <h1 id="green"> Basic </h1>
-              <p> Our times aren’t hyperbole we definitely have our servers perfect with these times* </p>
-            </div>
-            <div class="options">
-              <h1 id="blue"> Semi </h1>
-              <p>Nothing can get through! NOTHING! </p>
-            </div>
-            <div class="options">
-              <h1 id="red"> 24/7 Pro </h1>
-              <p> Our Assistants can assist you in your vulnerable time of need*</p>
-            </div>
-      </div>
+			<div class="rant">
+				<p>This package boosts massive server specs for half the price of what our competition has, the massive server overhead allows you to grow and not have the disadvantage of having other people’s servers affect your raw webhosting performance 	</p>
+				<p>All of our hosting packages also include solid state drives, which help ensure your site loads up quickly and is very stable. If you choose one package and find that you need something larger, just let us know. We can upgrade your hosting any time you want, without any site outages. You can also get in touch with our sales team and they will help you to determine what is right for you </p>
+
+			</div>
+
+		<div class="pricegrid">
+
+		  <ul class="plans">
+		    <li class="title"><h1> Good</h1></li>
+		    <li><b>All of Basic</b></li>
+		    <li>Dedicated IP's</li>
+		    <li>Open Development Platforms</li>
+		    <li>Possible liablity</li>
+		    <li>Free Bacon!</li>
+		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		  </ul>
+		  <ul class="plans">
+		    <li class="title"><h1>Basic</h1></li>
+		    <li>5mb of High Seed SSD Storage</li>
+		    <li>More ram then you will EVER need</li>
+		  	<li> Weight saving storage techniqs</li>
+				<li> you will become a god with your own URL </li>
+		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		  </ul>
+		  <ul class="plans">
+		    <li class="title"><h1>Amzing</h1></li>
+		   	<li> All of Basic & Good </li>
+				<li> Bring your A game to your compedters </li>
+				<li> Unleash raw power for your webserr </li>
+				<li>Custom Servers avaliable </li>
+		    <li><a class="pricebutton" href="" rel="nofollow"> Check Out</a></li>
+		  </ul>
+		</div>
 
 
   </section>
