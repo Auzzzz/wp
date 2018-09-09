@@ -22,6 +22,11 @@ h1 {
   font-size: 30px;
 }
 
+h3 {
+  font-family: 'Merienda', sans-serif;
+  font-size: 20px;
+}
+
 #green {
   color: #20BF55;
 }
@@ -170,7 +175,7 @@ main .home .desc {
   padding: 30px;
 }
 
-main .home .desc h1{
+main .home .desc h1 {
   text-align: center;
 }
 
@@ -240,72 +245,203 @@ main .home .info-grid .grid-display h1 {
 
 /* Products Page */
 
-main .list {
-  margin: 50px;
+main .list{
+  margin: 20px 0px;
+}
+
+main .list .rant{
+  padding: 10px;
   text-align: center;
 }
 
-main .list h1{
-  margin-bottom: 10px;
+main .list .pricegrid{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
 }
 
-main .list .options{
-  margin: 20px;
-}
-
-main .list #green{
-  margin-top: 10px;
-}
-
-main .list ul{
+main .list .pricegrid ul.plans{
   list-style: none;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 260px;
+  margin-right: 20px;
+  margin-bottom: 1em;
+  transition: all .5s;
+}
+
+main .list .pricegrid ul.plans:hover{
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+}
+
+main .list .pricegrid ul.plans .center{
+  margin: 0 auto;
   text-align: center;
 }
 
-main .list ul li{
-  padding: 10px;
+main .list .pricegrid ul.plans img{
+  max-width: 80%;
+  height: auto;
 }
 
-main .list ul li:nth-child(odd){
-  background-color: #747474;
+main .list .pricegrid ul.plans li{
+  padding: 10px 10px;
+  position: relative;
+  border-bottom: 1px solid #eee;
 }
 
-main .list ul li:last-child{
-  padding: 20px;
-  font-size: 30px;
-  font-weight: bold;
+/* individual tables */
+main .list .pricegrid ul.plans li.title{
+  text-align: center;
+  padding: 30px 10px;
+  background: #20BF55;
+  color: white;
 }
+
+main .list .pricegrid ul.plans:nth-of-type(2) li.title{
+  background: #2099EA;
+  color: white;
+}
+
+main .list .pricegrid ul.plans:nth-of-type(3) li.title{
+  background: #EF6461;
+  color: white;
+}
+
+main .list .pricegrid ul.plans li b{
+  text-transform: uppercase;
+}
+main .list .pricegrid ul.plans li.title b{
+  font-size: 250%;
+}
+
+main .list .pricegrid ul.plans:last-of-type{
+  margin-right: 0;
+}
+
+main .list .pricegrid ul.plans li:last-of-type{
+  text-align: center;
+  margin-top: auto;
+}
+
+main .list .pricegrid a.pricebutton{
+  background-color:#53d676;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 47px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+
 
 
 /*product*/
 
-main .order{
-  margin-left: 50px;
+main .order {
+  margin: 20px;
 }
 
+main .order .webhost {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+main .order .webhost .desc {
+  margin: 20px 10px;
+  text-align: center;
+}
 
+main .order .webhost .specs ul li {
+  padding: 8px;
+  list-style: none;
+  font-size: 18px;
+}
 
+main .order .webhost .specs {}
 
-main .login .head{
+main .order .form {
+  margin: 30px 10px;
+}
+
+main .order .form h3 {
+  text-align: center
+}
+
+main .order .form #error {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+main .order .form .submit {
+  background-color: #44c767;
+  -moz-border-radius: 42px;
+  -webkit-border-radius: 42px;
+  border-radius: 42px;
+  border: 12px solid #18ab29;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 16px 50px;
+  margin: 10px;
+  text-decoration: none;
+  text-shadow: -20px 17px 4px #2f6627;
+  width: 100%;
+
+}
+
+main .order .form .submit:hover {
+  background-color: #5cbf2a;
+}
+
+main .order .form .submit:active {
+  position: relative;
+  top: 1px;
+}
+
+main .order .webhost .desc .slab p {
+  padding: 10px;
+  text-align: center;
+}
+
+main .login .head {
   padding: 20px 30px;
   text-align: center;
 }
 
 /* login page */
-main .login{
+
+main .login {
   min-height: 100%;
+  margin-bottom: 24.5%;
 }
-main .login-form{
+
+main .login-form {
   text-align: center;
 }
+
 /* global footer */
 
 footer {
   background-color: #424B54;
   width: 100%;
-  margin-top: 24%;
 }
 
 .footer {
