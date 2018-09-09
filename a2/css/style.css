@@ -305,6 +305,7 @@ main .list .pricegrid ul.plans li.title{
   padding: 30px 10px;
   background: #20BF55;
   color: white;
+<<<<<<< HEAD
 }
 
 main .list .pricegrid ul.plans:nth-of-type(2) li.title{
@@ -333,6 +334,36 @@ main .list .pricegrid ul.plans li:last-of-type{
   margin-top: auto;
 }
 
+=======
+}
+
+main .list .pricegrid ul.plans:nth-of-type(2) li.title{
+  background: #2099EA;
+  color: white;
+}
+
+main .list .pricegrid ul.plans:nth-of-type(3) li.title{
+  background: #EF6461;
+  color: white;
+}
+
+main .list .pricegrid ul.plans li b{
+  text-transform: uppercase;
+}
+main .list .pricegrid ul.plans li.title b{
+  font-size: 250%;
+}
+
+main .list .pricegrid ul.plans:last-of-type{
+  margin-right: 0;
+}
+
+main .list .pricegrid ul.plans li:last-of-type{
+  text-align: center;
+  margin-top: auto;
+}
+
+>>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 main .list .pricegrid a.pricebutton{
   background-color:#53d676;
 	-moz-border-radius:28px;
@@ -356,6 +387,7 @@ main .list .pricegrid a.pricebutton{
 
 main .order {
   margin: 20px;
+<<<<<<< HEAD
 }
 
 main .order .webhost {
@@ -392,6 +424,37 @@ main .order .form h3 {
   text-align: center
 }
 
+=======
+}
+
+main .order .webhost {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+main .order .webhost .desc {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+main .order .webhost .specs ul li {
+  padding: 8px;
+  list-style: none;
+  font-size: 18px;
+}
+
+main .order .webhost .specs {}
+
+main .order .form {
+  margin: 30px 10px;
+}
+
+main .order .form h3 {
+  text-align: center
+}
+
+>>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 main .order .form #error {
   font-size: 20px;
   font-weight: bold;

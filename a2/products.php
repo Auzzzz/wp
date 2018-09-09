@@ -61,7 +61,11 @@
 		    <li>Open Development Platforms</li>
 		    <li>Possible liablity</li>
 		    <li>Free Bacon!</li>
+<<<<<<< HEAD
 		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
+=======
+		    <li><a class="pricebutton" href="" target="_blank" rel="nofollow"><span class="icon-tag"></span> Check Out</a></li>
+>>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 		  </ul>
 		  <ul class="plans">
 		    <li class="title"><h1>Basic</h1></li>
@@ -69,7 +73,11 @@
 		    <li>More ram then you will EVER need</li>
 		  	<li> Weight saving storage techniqs</li>
 				<li> you will become a god with your own URL </li>
+<<<<<<< HEAD
 		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
+=======
+		    <li><a class="pricebutton" href="http://ergonomictrends.com/best-ergonomic-office-chairs-reviews-buyers-guide/" target="_blank" rel="nofollow"><span class="icon-tag"></span> Check Out</a></li>
+>>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 		  </ul>
 		  <ul class="plans">
 		    <li class="title"><h1>Amzing</h1></li>
@@ -77,7 +85,11 @@
 				<li> Bring your A game to your compedters </li>
 				<li> Unleash raw power for your webserr </li>
 				<li>Custom Servers avaliable </li>
+<<<<<<< HEAD
 		    <li><a class="pricebutton" href="product.php" rel="nofollow"> Check Out</a></li>
+=======
+		    <li><a class="pricebutton" href="http://ergonomictrends.com/best-ergonomic-office-chairs-under-200-reviews/" target="_blank" rel="nofollow"><span class="icon-tag"></span> Check Out</a></li>
+>>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 		  </ul>
 		</div>
 
