@@ -246,16 +246,16 @@ main .home .info-grid .grid-display h1 {
 
 /* Products Page */
 
-main .list{
+main .list {
   margin: 20px 0px;
 }
 
-main .list .rant{
+main .list .rant {
   padding: 10px;
   text-align: center;
 }
 
-main .list .pricegrid{
+main .list .pricegrid {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -263,7 +263,7 @@ main .list .pricegrid{
   justify-content: center;
 }
 
-main .list .pricegrid ul.plans{
+main .list .pricegrid ul.plans {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -276,60 +276,61 @@ main .list .pricegrid ul.plans{
   transition: all .5s;
 }
 
-main .list .pricegrid ul.plans:hover{
+main .list .pricegrid ul.plans:hover {
   transform: scale(1.05);
   transition: all .5s;
   z-index: 100;
   box-shadow: 0 0 10px gray;
 }
 
-main .list .pricegrid ul.plans .center{
+main .list .pricegrid ul.plans .center {
   margin: 0 auto;
   text-align: center;
 }
 
-main .list .pricegrid ul.plans img{
+main .list .pricegrid ul.plans img {
   max-width: 80%;
   height: auto;
 }
 
-main .list .pricegrid ul.plans li{
+main .list .pricegrid ul.plans li {
   padding: 10px 10px;
   position: relative;
   border-bottom: 1px solid #eee;
 }
 
 /* individual tables */
-main .list .pricegrid ul.plans li.title{
+
+main .list .pricegrid ul.plans li.title {
   text-align: center;
   padding: 30px 10px;
   background: #20BF55;
   color: white;
-<<<<<<< HEAD
 }
 
-main .list .pricegrid ul.plans:nth-of-type(2) li.title{
+main .list .pricegrid ul.plans:nth-of-type(2) li.title {
   background: #2099EA;
   color: white;
 }
 
-main .list .pricegrid ul.plans:nth-of-type(3) li.title{
+main .list .pricegrid ul.plans:nth-of-type(3) li.title {
   background: #EF6461;
   color: white;
 }
 
-main .list .pricegrid ul.plans li b{
+main .list .pricegrid ul.plans li b {
   text-transform: uppercase;
 }
-main .list .pricegrid ul.plans li.title b{
+
+main .list .pricegrid ul.plans li.title b {
   font-size: 250%;
 }
 
-main .list .pricegrid ul.plans:last-of-type{
+main .list .pricegrid ul.plans:last-of-type {
   margin-right: 0;
 }
 
-main .list .pricegrid ul.plans li:last-of-type{
+main .list .pricegrid ul.plans li:last-of-type {
   text-align: center;
   margin-top: auto;
 }
@@ -337,57 +338,53 @@ main .list .pricegrid ul.plans li:last-of-type{
 =======
 }
 
-main .list .pricegrid ul.plans:nth-of-type(2) li.title{
+main .list .pricegrid ul.plans:nth-of-type(2) li.title {
   background: #2099EA;
   color: white;
 }
 
-main .list .pricegrid ul.plans:nth-of-type(3) li.title{
+main .list .pricegrid ul.plans:nth-of-type(3) li.title {
   background: #EF6461;
   color: white;
 }
 
-main .list .pricegrid ul.plans li b{
+main .list .pricegrid ul.plans li b {
   text-transform: uppercase;
 }
-main .list .pricegrid ul.plans li.title b{
+
+main .list .pricegrid ul.plans li.title b {
   font-size: 250%;
 }
 
-main .list .pricegrid ul.plans:last-of-type{
+main .list .pricegrid ul.plans:last-of-type {
   margin-right: 0;
 }
 
-main .list .pricegrid ul.plans li:last-of-type{
+main .list .pricegrid ul.plans li:last-of-type {
   text-align: center;
   margin-top: auto;
 }
 
->>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
-main .list .pricegrid a.pricebutton{
-  background-color:#53d676;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:21px;
-	padding:14px 47px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+main .list .pricegrid a.pricebutton {
+  background-color: #53d676;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 21px;
+  padding: 14px 47px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
 }
-
-
-
 
 /*product*/
 
 main .order {
   margin: 20px;
-<<<<<<< HEAD
 }
 
 main .order .webhost {
@@ -413,10 +410,11 @@ main .order .form {
   margin: 30px 10px;
 }
 
-main .order .form form button{
+main .order .form form button {
   padding: 5px;
 }
-main .order .form form #qty{
+
+main .order .form form #qty {
   max-width: 50px;
 }
 
@@ -454,7 +452,6 @@ main .order .form h3 {
   text-align: center
 }
 
->>>>>>> ce4f14538f94a90714a3a9f812185050ed945e2c
 main .order .form #error {
   font-size: 20px;
   font-weight: bold;
@@ -475,7 +472,6 @@ main .order .form .submit {
   text-decoration: none;
   text-shadow: -20px 17px 4px #2f6627;
   width: 100%;
-
 }
 
 main .order .form .submit:hover {
