@@ -17,7 +17,6 @@
 
 	<!-- JS -->
 	<script src='../wireframe.js'></script>
-	<script src='javascript.js'></script>
 
 </head>
 
