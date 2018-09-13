@@ -11,18 +11,6 @@
 
 
 ?>
-//HTML
-<table >
-	<tbody>
-		<tr>
-            <td><?php echo "key"; ?></td>
-<td><?php echo "img" ?></td>
-<td><?php echo "title"; ?></td>
-<td><?php echo "desc"; ?></td>
-<td><?php echo "$"."price" ?></td>
-</tr>
-</tbody>
-</table>
 
 
 
