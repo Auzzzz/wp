@@ -1,21 +1,10 @@
 <?php
-include_once('templates/header.php');
+include_once('tools.php');
+
+topModule('Name');
 ?>
 
 
-<header>
-    <div class="logo">
-</header>
-<nav class="circle">
-    <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a id="active" href="products.php">Products</a></li>
-        <li><a href="product.php">Web Hosting</a></li>
-        <li><a href="login.php">Login</a></li>
-    </ul>
-</nav>
-
-<main>
     <section class="products">
         <section class="header">
             <div class="wrap">
@@ -40,61 +29,87 @@ include_once('templates/header.php');
 
         <?php
 
-        function preShow($arr, $returnAsString = false)
-        {
-            $ret = '<pre>' . print_r($arr, true) . '</pre>';
-            if ($returnAsString)
-                return $ret;
-            else
-                echo $ret;
-        }
+//MOVE ME
+function preShow($arr, $returnAsString = false)
+{
+    $ret = '<pre>' . print_r($arr, true) . '</pre>';
+    if ($returnAsString)
+        return $ret;
+    else
+        echo $ret;
+}
 
-        $fp = fopen('products.txt', 'r');
-        if (($headings = fgetcsv($fp, 0, "\t")) !== false) {
-            while ($cells = fgetcsv($fp, 0, "\t")) {
-                for ($x = 1; $x < count($cells); $x++)
-                    $pumps[$cells[0]][$headings[$x]] = $cells[$x];
-            }
-        }
-        fclose($fp);
-        // preShow($pumps);
+$fp = fopen('products.txt', 'r');
+if (($headings = fgetcsv($fp, 0, "\t")) !== false) {
+    while ($cells = fgetcsv($fp, 0, "\t")) {
+        for ($x = 1; $x < count($cells); $x++)
+            $pumps[$cells[0]][$headings[$x]] = $cells[$x];
+    }
+}
+fclose($fp);
+//preShow($pumps);
 
-        //var_dump($_GET);
-        if (isset($_GET['key']) && this_id_actually_exists($_GET['key'])) {
+    foreach ($pumps as $key => $value) {?>
+      <table>
+          <tbody>
+          <tr>
+              <td><?php echo $key; ?></td>
+              <td><?php echo $value['img']; ?></td>
+              <td><?php echo $value['title']; ?></td>
+              <td><?php echo $value['desc']; ?></td>
+              <td><?php echo $value['price']; ?></td>
 
-            // show a single product or service matching id with a purchasing form
+              <td>
+                <form action='<?php echo $_SERVER['PHP_SELF']; ?>?id=<?php echo $key?>' method='post' enctype='multipart/form-data'> <input type="submit" value="submit" onclick="document.getElementById('form').style.display = 'block' ;"></form>
+              </td>
+              <?php }?>
+          </tr>
+          </tbody>
+      </table>
+      <?php
 
-            foreach ($pumps as $key => $value) {
-                var_dump($key);
-                echo "Display order form for" . $key . $value['img'];
-            }
-        } else {
-            // show all products or services without purchasing form
-            foreach ($pumps as $key => $value) {
-                ?>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td><?php echo $key; ?></td>
-                        <td><?php echo $value['img']; ?></td>
-                        <td><?php echo $value['title']; ?></td>
-                        <td><?php echo $value['desc']; ?></td>
-                        <td><?php echo "$" . $value['price']; ?></td>
-                        <td>
-                            <form method="GET"><input type="hidden" name="id" value="<?php echo $key; ?>"/><input
-                                        type="submit" value="submit"></form>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <?php
-                // var_dump($_GET);
-            }
-        }
+      if (isset($_GET['id'])) {
+        echo $_GET['id'];
         ?>
+        <div class="form">
+          <h3> Order Now! </h3>
+
+          <form id='order' method='post' target='_blank' onclick="val()" action='https://titan.csit.rmit.edu.au/~e54061/wp/processing.php'>
+          <p id='error'></p>
+          <div class="value">
+          <label> How many Servers do you need?</label>
+          <input type="hidden" id='id' name="id" value="Webserver 1"/>
+          <button type="button" onclick="add();">+</button>
+          <input type="number" id='qty' name="qty" value="1" min="1" />
+          <button type="button" onclick="neg();">-</button>
+        </div>
+          <br />
+          <div class="option">
+          <label> How many Servers do you need?</label>
+          <select name="option">
+            <option value="Wave your Rights">Wave your rights</option>
+            <option value="dedi-ip">Get a dedicated ip address*</option>
+            <option value="phone">Get a direct number to not go through our system</option>
+            <option value="audi">Win a CAR!**</option>
+          </select>
+          <br/>
+            <button form="order" class="submit" id="submit"> Order Now </button>
+        </div>
+
+        <!-- taken from here https://tympanus.net/Development/ParticleEffectsButtons/ -->
+
+
+      </form>
+    </div>
+        <?php
+} else {
+  //dipslay nothing
+}
+
+?>
     </section>
 </main>
 
 <?php
-include_once('templates/footer.php');
+bottomModule();
 ?>

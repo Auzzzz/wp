@@ -2,5 +2,5 @@ pid	img	title	desc	price
 GP8002	GP8002.jpg	1947 Tokheim Model 39 Cut-Down	Interesting example of a post-war Tokheim Cut Down 39 (Tall). Ad glass over the window. Texaco green and red.	5495
 GB96CSUN	GB96CSUN.jpg	1938 Gilbert & Barker Model 96C Sunray	Beautiful authentic yellow and orange paint scheme highlight this Sunray Gilbert & Barker early electric gas pump. Completely restored inside and out. Correct Gilbarco nozzle. Museum quality.	5495
 TK39TLSIG	TK39TLSIG.jpg	1939 Tokheim Model 39 (Tall) Signal Gasoline	Impressive size and paint scheme, this Tokheim 39 Tall Signal Gasoline pump signaled that the end of the pre-war, \"tall\" pump era was coming to a close. This magnificent example with it's vintage gas brand is near mint. Completely restored. Correct Tokheim nozzle. Near mint.	6495
-RGP300	RGP300.jpg	1957 Tokheim Model 300 restored to Flying A	Classic design, beautifully restored.	5495
+RGP300	RGP300.jpg	1957 Tokheim Model 300 restored to Flying A	Classic design, beautifully restored.	549523
 RGP300A	RGP300A.jpg	1955 Tokheim Model 300 American	Unusual American (Standard) pump from 1955. Striped paint scheme is authentic. Beautiful red and white example.	5495

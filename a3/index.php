@@ -1,20 +1,9 @@
 <?php
- include_once ('templates/header.php');
+include_once('tools.php');
+
+topModule('Name');
+
 ?>
-
-
-
-<header>
-    <div class="logo">
-</header>
-<nav class="circle">
-    <ul>
-        <li><a id="active" href="index.php">Home</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="product.php">Web Hosting</a></li>
-        <li><a href="login.php">Login</a></li>
-    </ul>
-</nav>
 
 <main>
     <section class="home">
@@ -89,5 +78,5 @@
 </main>
 
 <?php
-include_once ('templates/footer.php');
+bottomModule();
 ?>
