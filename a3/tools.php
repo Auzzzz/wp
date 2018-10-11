@@ -7,7 +7,17 @@
  */
 
 
-/* Display All products */
+/*
+
+-> Function topModule
+-> Function bottomModule
+-> Function preShow
+-> Product Array - call with $pumps
+-> Print Page Code
+
+
+
+ */
 
 function topModule($pageTitle, $onLoad='') {
   $output = "Test";
@@ -21,6 +31,8 @@ function topModule($pageTitle, $onLoad='') {
         <!-- Global Session Start -->
         <?php
         session_start();
+        //Load the session
+
         ?>
 
         <!-- Skeleton Framework -->
@@ -52,8 +64,8 @@ function topModule($pageTitle, $onLoad='') {
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="products.php">Products</a></li>
-            <li><a href="product.php">Web Hosting</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li><a href="cart.php">Your Cart</a></li>
+            <li><a href="checkout.php">Checkout</a></li>
         </ul>
     </nav>
 
@@ -77,12 +89,44 @@ function bottomModule(){
           <br />
           <div class="dis">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia</div>
           <div class="dis"><a target="_blank" href='products.txt' >products spreadsheet</a> and <a target="_blank" href='orders.txt'>orders spreadsheet</a></div>
-          <br />
-          <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+          <div class="dis"><input type="button" name="code" id="code" value="code" /></div>
+          <div><button id="button">Show Code</button><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
       </div>
   </footer>
+<div id="newpost">
+  <?php printMyCode();?>
+</div>
   </body>
-
   </html>
+
+
+
   <?php
+}
+
+function preShow($arr, $returnAsString = false)
+{
+    $ret = '<pre>' . print_r($arr, true) . '</pre>';
+    if ($returnAsString)
+        return $ret;
+    else
+        echo $ret;
+
+}
+
+$fp = fopen('products.txt', 'r');
+if (($headings = fgetcsv($fp, 0, "\t")) !== false) {
+    while ($cells = fgetcsv($fp, 0, "\t")) {
+        for ($x = 1; $x < count($cells); $x++)
+            $pumps[$cells[0]][$headings[$x]] = $cells[$x];
+    }
+}
+fclose($fp);
+
+function printMyCode() {
+  $lines = file($_SERVER['SCRIPT_FILENAME']);
+  echo "<pre class='mycode'>\n";
+  foreach ($lines as $lineNo => $lineOfCode)
+     printf("%3u: %1s \n", $lineNo, rtrim(htmlentities($lineOfCode)));
+  echo "</pre>";
 }

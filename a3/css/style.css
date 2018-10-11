@@ -47,6 +47,15 @@ h3 {
     color: #000;
 }
 
+/*Show and hide code*/
+
+#newpost {
+    display: none;
+}
+
+#newpost.visible {
+    display: block;
+}
 /*header */
 
 @media only screen and (max-width: 13000px) {
