@@ -131,65 +131,65 @@ function printMyCode() {
   echo "</pre>";
 }
 
-function checkname($name){
-        if(isset($name)){
-            if (preg_match('/^[a-z ,.\'-]+$/i', $name)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-
-function checkemail($email){
-        if(isset($email)){
-            if (preg_match('/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}/i', $email)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-
-function checkaddress($address){
-        if(isset($address)){
-            if (preg_match('/^[0-9][-a-z0-9 ,#\'\/.]{3,50}/im', $address)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-
-function checkphone($phone){
-        if(isset($phone)){
-            if (preg_match('/^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$/i', $phone)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-
-function checkcard($card){
-        if(isset($card)){
-            if (preg_match('/^4[0-9]{12}(?:[0-9]{3})?$/i', $card)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-
-function checkdate($date){
-        if(isset($date)){
-            if (preg_match('/^(0[1-9]|1[0-2]|[1-9])\/(1[4-9]|[2-9][0-9]|20[1-9][1-9])$/', $date)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
+// function checkname($name){
+//         if(isset($name)){
+//             if (preg_match('/^[a-z ,.\'-]+$/i', $name)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+//
+// function checkemail($email){
+//         if(isset($email)){
+//             if (preg_match('/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}/i', $email)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+//
+// function checkaddress($addresstest){
+//         if(isset($addresstest)){
+//             if (preg_match("/([a-zA-Z\., '-])/", $addresstest)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+//
+// function checkphone($phone){
+//         if(isset($phone)){
+//             if (preg_match('/^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[-]?\d{3})$/i', $phone)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+//
+// function checkcard($card){
+//         if(isset($card)){
+//             if (preg_match('/^4[0-9]{12}(?:[0-9]{3})?$/i', $card)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+//
+// function datecheck($date){
+//         if(isset($date)){
+//             if (preg_match('/^(0[1-9]|1[0-2]|[1-9])\/(1[4-9]|[2-9][0-9]|20[1-9][1-9])$/', $date)){
+//             return true;
+//         }else{
+//             return false;
+//         }
+//     }
+// }
 
 //if(isset($name)){
 //        return "username blank";
