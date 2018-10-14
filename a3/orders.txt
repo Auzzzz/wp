@@ -1,1 +1,3 @@
-Date	Name	Email	Mobile	Address	PID	OID	Quantity	Unit Price	Sub Total
+\Date	Name	Email	Address     Mobile  	UID     PID	    Unit-Price   Quantity   Desc    Option	Sub  Total
+"October 14, 2018, 7:20 pm"	"Chris Kelly"	s3544232@student.rmit.edu.au	"14 Cedric St"	394994529	1411	GP8002	50	1	"Wave your Rights"	55
+"October 14, 2018, 7:20 pm"	"Chris Kelly"	s3544232@student.rmit.edu.au	"14 Cedric St"	394994529	1411	RGP300A	5	1	"Wave your Rights"	55

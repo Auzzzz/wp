@@ -64,9 +64,9 @@ topModule('Name');
                 <div class="value">
                     <label> How many Servers do you need?</label>
                     <input type="hidden" id='id' name="id" value="<?php echo $id;?>"/>
-                    <button type="button" onclick="add();">+</button>
-                    <input type="number" id='qty' name="qty" value="1" min="1" />
-                    <button type="button" onclick="neg();">-</button>
+                    <button type="button" id="increase" onclick="increaseValue()">+</button>
+                    <input type="number" id='qty' name="qty" value="1" min="1" max="6" />
+                    <button type="button" id="decrease" onclick="decreaseValue()">-</button>
                 </div>
                 <br />
                 <div class="option">
@@ -88,7 +88,6 @@ topModule('Name');
 ?>
     </section>
 </main>
-
 <?php
 bottomModule();
 ?>

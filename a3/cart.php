@@ -12,15 +12,28 @@ if(isset($_POST['delete'])) {//run when the delete button is clicked
     }
 }
 
-if(isset($_POST ['add'])){
-    $_SESSION['cart'][] = array(
-        "qty" => $_POST['qty'],
-        "pid" => $_POST['id'],
-        "option" => $_POST['option']
-    );
-    unset($_POST['add']); //Empty post['add'] after submited so page refresh does not trigger new cart add
+if(isset($_POST ['add'])) {
+    if ($_POST['qty'] < 1) {
+        echo "cant add a a value less then 1";
+    } else {
+        $_SESSION['cart'][] = array(
+            "qty" => $_POST['qty'],
+            "pid" => $_POST['id'],
+            "option" => $_POST['option']
+        );
+        unset($_POST['add']); //Empty post['add'] after submited so page refresh does not trigger new cart add
+        unset($_POST['qty']); //Empty post['add'] after submited so page refresh does not trigger new cart add
+        unset($_POST['id']); //Empty post['add'] after submited so page refresh does not trigger new cart add
+        unset($_POST['option']); //Empty post['add'] after submited so page refresh does not trigger new cart add
+    }
 }
-
+?>
+<div class="centerdiv">
+    <div class="wrap">
+<?php
+if(isset($_POST['cancel'])){
+    unset($_SESSION['cart']);
+}
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {  //Check if post[çart] is empty
     for ($i = 0, $size = sizeof($_SESSION['cart']); $i < $size; ++$i) {
 
@@ -40,9 +53,8 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {  //Check if post[ç
                             <td>Sub-Total</td>
                             <td>Remove</td>
                         </tr>
-                        <?php //echo $value['price'] ?>
+
                         <tr>
-                            <?php echo $i; ?>
                             <td> <?php echo $_SESSION['cart'][$i]["pid"]; ?> </td>
                             <td> <?php echo $value['desc'] ?></td>
                             <td> <?php echo $_SESSION['cart'][$i]["option"]; ?> </td>
@@ -59,11 +71,21 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {  //Check if post[ç
                 <?php
             }
         }
+
     }
+    ?><form method="post"><button name="cancel" >Delete Cart</button></form><?php
 }
+
 else{
-    echo "<p> Go buysomething! </p>";
+    echo "<p> Go buysomething! You will be redirected in 5 seconds </p>";
+
 }
-print_r($_SESSION['cart']);
+?>
+
+<form action="checkout.php"><button >Checkout</button></form>
+    </div>
+    </div>
+
+<?php
 bottomModule();
 ?>

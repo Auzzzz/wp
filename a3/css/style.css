@@ -27,6 +27,33 @@ h3 {
     font-size: 20px;
 }
 
+.center{
+    text-align: center;
+}
+
+.centerdiv {
+    margin: auto;
+    width: 50%;
+
+    padding: 10px;
+}
+
+.input{
+    padding: 15px;
+}
+
+.input i{
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
 #green {
     color: #20BF55;
 }
@@ -489,7 +516,7 @@ main .order .form .submit:active {
 main .order .webhost .desc .slab p {
     padding: 10px;
     text-align: center;
-}
+} v
 
 main .login .head {
     padding: 20px 30px;
@@ -523,4 +550,52 @@ footer {
 footer .footer .dis {
     font-size: 20px;
     font-weight: bold;
+}
+
+/*Printing */
+
+
+/** RTL **/
+.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.rtl table {
+    text-align: right;
+}
+
+.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.subpage {
+
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
 }

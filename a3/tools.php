@@ -31,8 +31,8 @@ function topModule($pageTitle, $onLoad='') {
         <!-- Global Session Start -->
         <?php
         session_start();
-        //Load the session
-
+        //Set defult time zone to australia
+        date_default_timezone_set('Australia/Melbourne');
         ?>
 
         <!-- Skeleton Framework -->
@@ -93,9 +93,8 @@ function bottomModule(){
           <div><button id="button">Show Code</button><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
       </div>
   </footer>
-<div id="newpost">
-  <?php printMyCode();?>
-</div>
+
+<?php printMyCode();?>
   </body>
   </html>
 
@@ -104,6 +103,11 @@ function bottomModule(){
   <?php
 }
 
+function redirct(){
+    header('refresh: 5; URL=/products.php');
+}
+
+//Provided by Assigmnt Docs or Weekly tasks
 function preShow($arr, $returnAsString = false)
 {
     $ret = '<pre>' . print_r($arr, true) . '</pre>';
@@ -128,72 +132,23 @@ function printMyCode() {
   echo "<pre class='mycode'>\n";
   foreach ($lines as $lineNo => $lineOfCode)
      printf("%3u: %1s \n", $lineNo, rtrim(htmlentities($lineOfCode)));
+  echo(")/***************/
+  /*Cart Session */
+  /***************/");
+     print_r($_SESSION['cart']);
+
+  echo("/***************/
+  /*User Session */
+  /***************/");
+     print_r($_SESSION['user']);
+
+     echo("/***************/
+  /*Session Dump*/
+  /***************/");
+    print_r($_SESSION);
+         echo("/***************/
+  /*Post Dump*/
+  /***************/");
+    print_r($_POST);
   echo "</pre>";
 }
-
-// function checkname($name){
-//         if(isset($name)){
-//             if (preg_match('/^[a-z ,.\'-]+$/i', $name)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-//
-// function checkemail($email){
-//         if(isset($email)){
-//             if (preg_match('/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}/i', $email)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-//
-// function checkaddress($addresstest){
-//         if(isset($addresstest)){
-//             if (preg_match("/([a-zA-Z\., '-])/", $addresstest)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-//
-// function checkphone($phone){
-//         if(isset($phone)){
-//             if (preg_match('/^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[-]?\d{3})$/i', $phone)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-//
-// function checkcard($card){
-//         if(isset($card)){
-//             if (preg_match('/^4[0-9]{12}(?:[0-9]{3})?$/i', $card)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-//
-// function datecheck($date){
-//         if(isset($date)){
-//             if (preg_match('/^(0[1-9]|1[0-2]|[1-9])\/(1[4-9]|[2-9][0-9]|20[1-9][1-9])$/', $date)){
-//             return true;
-//         }else{
-//             return false;
-//         }
-//     }
-// }
-
-//if(isset($name)){
-//        return "username blank";
-//    }elseif (preg_match('/^[a-z ,.\'-]+$/i', $name)){
-//        return "test";
-//    }
-//    return true;
